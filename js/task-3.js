@@ -1,10 +1,11 @@
 function filterArray(numbers, value) {
   const emptyMass = [];
-  if (i = 0; numbers <= i; i++ 1;) {
-    return numbers > value;
-  } else {
-    return emptyMass;
+  for (let i = 0; numbers.length >= i; i++) { //циклом сделаем итерацию в массиве
+    if (numbers[i] > value) {
+      emptyMass.push(numbers[i]);
+    }
   }
+  return emptyMass
 }
 
 
