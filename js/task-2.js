@@ -1,9 +1,10 @@
 function makeArray(firstArray, secondArray, maxLength) {
-  const newArray = firstArray.concat(secondArray);
-  if (newArray > maxLength) {
-    return maxLength.slice();
+  const newArray = firstArray.concat(secondArray); //сначала соединям два массива
+  if (newArray.length > maxLength) {
+    // прописываем условия
+    return newArray.slice(0, maxLength);
   } else {
-    return newArray.slice;
+    return newArray.slice();
   }
 }
 
