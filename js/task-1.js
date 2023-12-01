@@ -1,5 +1,5 @@
 function slugify(title) {
-  const slugTitle = title.split(' ').join('-').toLowerCase(); //Сначала используем метод для разденления строки на масив подстрок, затем обьеденяем элементы масива в стоку с разделителем "-", затем задаём нижний реестр
+  const slugTitle = title.split(' ').join('-').toLowerCase(); //Сначала используем метод для разденления строки на масив подстрок, затем обьеденяем элементы масива в стоку с разделителем "-", затем задаём нижний регистр
   return slugTitle;
 }
 console.log(slugify('Arrays for begginers')); // "arrays-for-begginers"
